@@ -12,7 +12,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="py-8 border-t border-border bg-muted/30">
+    <footer className="w-full py-6 bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <motion.div
@@ -21,9 +21,10 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-muted-foreground"
           >
-            <span>© {currentYear} Made with</span>
-            <Heart className="h-4 w-4 text-destructive fill-destructive" />
-            <span>by Developer</span>
+            <span className="text-sm text-gray-300">
+  © 2026 Made by Tsabita
+</span>
+            
           </motion.div>
 
           <motion.div

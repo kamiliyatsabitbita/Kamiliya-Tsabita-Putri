@@ -19,19 +19,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@developer.com',
-    href: 'mailto:hello@developer.com',
+    value: 'kamiliyatsabita@gmail.com',
+    href: 'mailto:kamiliyatsabita@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 3456 7890',
-    href: 'tel:+6281234567890',
+    value: '',
+    href: '',
   },
   {
     icon: MapPin,
     label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
+    value: 'Aceh, Indonesia',
     href: '#',
   },
 ];
@@ -86,7 +86,7 @@ export default function ContactSection() {
       });
 
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error: any) {
+    } catch (error) {
       console.error('Error sending email:', error);
       toast({
         title: 'Gagal Mengirim',
@@ -99,7 +99,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32">
+    <section id="contact" className="py-20 bg-gradient-to-b from-pink-200 via-blue-200 to-purple-200">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

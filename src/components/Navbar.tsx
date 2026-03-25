@@ -40,9 +40,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-strong shadow-card' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-pink-100 via-blue-100 to-purple-100 shadow-md`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -52,10 +50,10 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className="font-display text-xl md:text-2xl font-bold text-gradient cursor-pointer"
+            className="font-display text-xl md:text-2xl font-bold text-blue-800 cursor-pointer"
             whileHover={{ scale: 1.05 }}
           >
-            &lt;Dev /&gt;
+            Tsabita's Portfolio
           </motion.a>
 
           {/* Desktop Navigation */}

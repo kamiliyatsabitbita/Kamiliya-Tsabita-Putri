@@ -61,7 +61,7 @@ const certificates = [
 
 export default function CertificatesSection() {
   return (
-    <section id="certificates" className="py-20 md:py-32">
+    <section id="certificates" className="py-20 bg-gradient-to-b from-pink-200 via-blue-200 to-purple-200">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
